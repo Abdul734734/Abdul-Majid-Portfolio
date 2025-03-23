@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(70, 31, 8);
+  color: white;
+}
+.left a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  font-size: large;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(10, 139, 252);
+}
+
+.heroSection {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+
+  background-image: url("photo-1531297484001-80022131f5a1.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 108px;
+  position: relative;
+}
+
+.heroSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 3rem;
+  margin: 100px 0;
+  color: white;
+  font-style: initial;
+}
+
+.purple {
+  color: rgb(24, 109, 14);
+}
+
+.aboutSection {
+  display: flex;
+  padding: 100px 0px;
+  justify-content: space-around;
+  color: #ccc;
+  background: rgb(70, 31, 8);
+}
+.aboutSection > div {
+  width: 100%;
+}
+.meSection p {
+  padding-top: 30px;
+}
+
+.aboutSection p :hover {
+  color: rgba(220, 213, 204, 0.787);
+  font-size: larger;
+}
+.imgSection img {
+  width: 80%;
+  margin: 50px;
+  stroke-width: 50cqb;
+}
+.projects {
+  text-align: center;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 100px 0px;
+}
+.project h2 {
+  padding: 40px 0px;
+}
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.project-item img {
+  width: 410px;
+  height: 365px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.skills {
+  text-align: center;
+  padding: 100px 0px;
+  background-color: #2d2b2b;
+  font-style: bold;
+  color: aliceblue;
+}
+.skills h2 {
+  padding: 30px;
+}
+
+.skills img {
+  min-width: 300px;
+  max-height: 360px;
+  flex-basis: 30%;
+  border-radius: 7px;
+  position: relative;
+}
+
+.footer {
+  background: #000000;
+  color: white;
+  padding: 100px 0px;
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
+}
+.footer h2 {
+  text-align: left;
+  padding: 30px 0px;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgb(15, 15, 225);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(38, 14, 35);
+}
+.backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0b77e3;
+  color: rgb(248, 233, 233);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .heroSection > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .imgSection img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item img {
+    width: 90%;
+    height: auto;
+  }
+  .skills img {
+    width: 100%;
+    max-height: auto;
+  }
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftSection {
+    font-size: 2rem;
+    margin: 50px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .backToTopBtn {
+    width: 100px;
+    padding: 8px;
+    font-size: 12px;
+  }
+}

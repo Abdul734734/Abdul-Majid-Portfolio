@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <h3><a href="./">Abdul's Portfolio</a></h2>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="heroSection" id="home">
+      <div class="leftSection">
+        Hi,My name is <span class="purple">Abdul</span> and I am a Web
+        Developer
+      </div>
+    </section>
+    <section class="aboutSection" id="about">
+      <div class="imgSection">
+        <img src="WhatsApp Image 2025-03-23 at 4.22.47 PM.jpeg" alt="" />
+      </div>
+      <div class="meSection">
+        <h2>About me</h2>
+        <p>
+          <p1>
+            I am a beginner web developer excited about learning and
+            creating. I have recently started my journey in web development,
+            and Iam passionate about building websites that are both
+            functional and visually appealing.</p1>
+
+
+        <p>Currently, Iam focusing on:</p>
+        <p>
+        <ul>
+          <li>HTML and CSS for structure and styling</li>
+          <li>JavaScript for adding interactivity</li>
+          <li>
+            Learning frameworks like React to build dynamic web
+            applications
+          </li>
+        </ul>
+        </p>
+
+        <p>
+          I am always eager to expand my skills and take on new challenges.
+          I enjoy working on personal projects and I am excited to grow as a
+          developer. My goal is to create websites that are easy to navigate
+          and meet user needs.</p>
+
+        <p>
+          Feel free to check out my projects, and don't hesitate to connect
+          if you're interested in collaborating or sharing tips.</p>
+        </p>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project">
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-box">
+        <div class="project-item">
+          <img src="pan cake.jpg" alt="" />
+        </div>
+
+        <div class="project-item">
+          <img src="8BallPool_OG-logo.jpg" alt="" />
+        </div>
+        <div class="project-item">
+          <img
+            src="zoo-cartoon-illustration-with-safari-animals-elephant-giraffe-lion-monkey-panda-zebra-and-visitors-on-territory-on-forest-background-vector.jpg"
+            alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills">
+        <h2>My Skills</h2>
+        <p><img src="1697274440798.png" alt="" /></p>
+      </div>
+    </section>
+    <section class="contact" id="contact-me">
+      <footer class="footer">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </footer>
+    </section>
+    <button class="backToTopBtn" id="backToTopBtn" onclick="scrollToTop()">
+      Back to Top
+    </button>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
