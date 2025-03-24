@@ -188,7 +188,6 @@ button:hover {
   display: none;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   nav {
     flex-direction: column;
